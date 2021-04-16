@@ -51,7 +51,6 @@ class _document extends Document {
 						href="/static/icons/safari-pinned-tab.svg"
 						color="#5bbad5"
 					/>
-					<link rel="shortcut icon" href="/favicon.ico" />
 					<link
 						rel="stylesheet"
 						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
@@ -78,6 +77,8 @@ class _document extends Document {
 						property="og:image"
 						content="https://yourdomain.com/static/icons/apple-touch-icon.png"
 					/>
+					<link rel="manifest" href="/manifest.json" />
+					<link rel="shortcut icon" href="/favicon.ico" />
 				</Head>
 				<body>
 					<Main />
