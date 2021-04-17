@@ -1,10 +1,12 @@
 import "../styles/globals.css";
 import React from "react";
 import Head from "next/head";
+import { Provider } from "react-redux";
+import store from "../store";
 
 const _app = ({ Component, pageProps }) => {
 	return (
-		<>
+		<Provider store={store}>
 			<Head>
 				<meta
 					name="viewport"
@@ -12,7 +14,7 @@ const _app = ({ Component, pageProps }) => {
 				/>
 			</Head>
 			<Component {...pageProps} />
-		</>
+		</Provider>
 	);
 };
 
